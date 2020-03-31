@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yelyzaveta Brednyeva, NULP, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.29.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+C:\Users\111\Documents\Lab3Micro\MDK-ARM\Lab3Micro.uvprojx
+Project File Date:  03/30/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Lab3Micro'
+compiling net.c...
+net.h(37): warning:  #1-D: last line of file ends without a newline
+   
+net.c(270): warning:  #111-D: statement is unreachable
+  	es = (struct client_struct *)arg;
+net.c(646): warning:  #1-D: last line of file ends without a newline
+  }
+net.c: 3 warnings, 0 errors
+compiling main.c...
+C:\Users\111\Documents\Lab3Micro\MDK-ARM\net.h(37): warning:  #1-D: last line of file ends without a newline
+   
+../Src/main.c(42): warning:  #223-D: function "net_ini" declared implicitly
+  net_ini();
+../Src/main.c(217): warning:  #223-D: function "UART6_RxCpltCallback" declared implicitly
+      UART6_RxCpltCallback();
+../Src/main.c: 3 warnings, 0 errors
+linking...
+Lab3Micro\Lab3Micro.axf: error: L6050U: The code size of this image (59044 bytes) exceeds the maximum allowed for this version of the linker.
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+"Lab3Micro\Lab3Micro.axf" - 1 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Lab3Micro
+  C:\Users\111\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\111\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Target not created.
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>
